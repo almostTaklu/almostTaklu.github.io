@@ -1,0 +1,277 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.social-icons svg {
+    margin: 0 10px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.about-me-jumbotron {
+    background: #f8f9fa;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.about-me-content {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.about-me-img {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.projects-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.175);
+    transform: translateY(-2px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item .card-body {
+    text-align: left;
+}
+
+.project-title {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.project-description {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.project-buttons .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.project-buttons .btn i {
+    margin-right: 10px;
+}
+
+.project-stats {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.project-stats .username {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.project-stats span {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.project-stats svg {
+    margin-right: 5px;
+}
+
+.languages {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language-badge {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.78rem;
+}
+
+.last-updated {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.skill-bar {
+    margin: 10px 0;
+    background: #e0e0e0;
+    border-radius: 25px;
+}
+
+.skill-level {
+    display: block;
+    height: 20px;
+    border-radius: 25px;
+    background: #007bff;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    animation: growSkill 2s ease-out;
+}
+
+@keyframes growSkill {
+    from { width: 0; }
+    to { width: var(--skill-width); }
+}
+
+.contact-me-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.contact-me-section form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-me-section form input,
+.contact-me-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-me-section form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-me-section .email-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer svg {
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-me-jumbotron {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .about-me-img {
+        display: none;
+    }
+
+    .contact-me-section {
+        flex-direction: column;
+    }
+
+    .contact-me-section form {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-me-section .email-info {
+        margin-left: 0;
+    }
+
+    .project-item {
+        width: calc(100% - 20px);
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

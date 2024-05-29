@@ -1,0 +1,38 @@
+.navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(250, 248, 248, 0.9); /* Adjust the transparency value as needed */
+  }
+  
+  .navbar-brand {
+    font-size: 1.9rem;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .ml-auto .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  
