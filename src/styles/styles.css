@@ -21,7 +21,7 @@ body {
 }
 
 .about-me-jumbotron {
-    background: #f8f9fa;
+    background: #E4EBEF;
     padding: 50px 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ body {
 .projects-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: #F6F8FA;
     margin: 20px 0;
 }
 
@@ -62,7 +62,7 @@ body {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .project-item {
@@ -101,7 +101,7 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .project-buttons .btn {
@@ -109,11 +109,11 @@ body {
     padding: 0.5rem 1rem;
     display: flex;
     align-items: center;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .project-buttons .btn i {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .project-stats {
@@ -142,18 +142,20 @@ body {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .language-badge {
     background-color: #e0e0e0;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 5px;
-    font-size: 0.78rem;
+    border-radius: 10px;
+    padding: 3px 7px;
+    margin: 8px;
+    font-size: 0.6rem;
+    font-weight: bold;
 }
 
 .last-updated {
-    margin-top: 10px;
+    margin-left: 10px;
     font-size: 0.9rem;
     color: #6c757d;
 }
