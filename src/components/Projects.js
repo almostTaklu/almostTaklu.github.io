@@ -13,7 +13,7 @@ const Projects = () => {
                 clone_url: 'https://github.com/mucsci-students/2024sp-420-PythonB.git',
                 html_url: 'https://github.com/mucsci-students/2024sp-420-PythonB',
                 stargazers_count: 3,
-                forks_count: 10,
+                forks_count: 0,
                 languages_url: 'https://api.github.com/repos/mucsci-students/2024sp-420-PythonB/languages',
                 updated_at: '2024-05-29T03:00:00Z',
                 owner: {
@@ -65,19 +65,21 @@ const Projects = () => {
                                 </div>
                                 <div className="project-stats">
                                     <span className="username">@{repo.owner.login}</span>
-                                    {repo.stargazers_count > 0 && (
-                                        <span>
-                                            <i className="fas fa-star"></i> {repo.stargazers_count}
-                                        </span>
-                                    )}
-                                    {repo.forks_count > 0 && (
-                                        <span>
-                                            <i className="fas fa-code-branch"></i> {repo.forks_count}
-                                        </span>
-                                    )}
                                     <span className="last-updated">
                                         Updated on {new Date(repo.updated_at).toLocaleDateString()}
                                     </span>
+                                    <div className="repo-stats">
+                                        {repo.stargazers_count > 0 && (
+                                            <span className="repo-stars">
+                                                <i className="fas fa-star"></i> {repo.stargazers_count}
+                                            </span>
+                                        )}
+                                        {repo.forks_count > 0 && (
+                                            <span className="repo-forks">
+                                                <i className="fas fa-code-branch"></i> {repo.forks_count}
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </div>
