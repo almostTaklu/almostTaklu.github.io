@@ -7,7 +7,7 @@ const AboutMe = () => (
     <Container>
       <Row className="align-items-center">
         <Col md={4} className="text-center">
-          <img src="https://via.placeholder.com/150" alt="Ganga Acharya" className="about-me-img"/>
+          <img src="https://via.placeholder.com/250" alt="Ganga Acharya" className="about-me-img"/>
         </Col>
         <Col md={8} className="about-me-content">
           <h2 className="about-me-title">About Me</h2>

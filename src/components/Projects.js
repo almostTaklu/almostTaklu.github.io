@@ -13,8 +13,8 @@ const Projects = () => {
                 clone_url: 'https://github.com/mucsci-students/2024sp-420-PythonB.git',
                 html_url: 'https://github.com/mucsci-students/2024sp-420-PythonB',
                 stargazers_count: 3,
-                forks_count: 0,
-                languages_url: 'https://api.github.com/repos/mucsci-students/2024sp-420-PythonB/languages',
+                forks_count: 10,
+                languages_url: 'https://api.github.com/repos/mucsci-students/2024sp-420-PythonB/language',
                 updated_at: '2024-05-29T03:00:00Z',
                 owner: {
                     login: 'mucsci-students',
@@ -51,7 +51,7 @@ const Projects = () => {
                                         <i className="fab fa-github"></i> Clone Project
                                     </a>
                                     <a href={repo.html_url} className="btn btn-outline-secondary">
-                                        <i className="fab fa-github"></i> Repo
+                                        <i className="fab fa-github"></i> View Repo
                                     </a>
                                 </div>
                                 <hr />
@@ -76,7 +76,7 @@ const Projects = () => {
                                         )}
                                         {repo.forks_count > 0 && (
                                             <span className="repo-forks">
-                                                <i className="fas fa-code-branch"></i> {repo.forks_count}
+                                                <i className="fas fa-code-fork"></i> {repo.forks_count}
                                             </span>
                                         )}
                                     </div>

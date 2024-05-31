@@ -11,11 +11,11 @@ const Hero = () => {
         <h1>Ganga Acharya</h1>
         <h2>
           <Typewriter
-            words={['Data Analyst', 'Web Developer', 'Tech Enthusiast']}
+            words={['Software Developer', 'Web Developer', 'Tech Enthusiast']}
             loop
             cursor
             cursorStyle="_"
-            typeSpeed={70}
+            typeSpeed={90}
             deleteSpeed={50}
             delaySpeed={1000}
           />
