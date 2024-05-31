@@ -18,7 +18,6 @@ body {
 .about-me-jumbotron {
     background: #E4EBEF;
     padding: 50px 0;
-    margin-bottom: 0;
 }
 
 .about-me-title {
@@ -63,7 +62,7 @@ body {
 .project-item {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px;
     width: calc(50% - 20px);
     box-sizing: border-box;
@@ -173,7 +172,7 @@ body {
 .skills-section {
     text-align: center;
     padding: 50px 0;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .skills-title {
@@ -213,6 +212,7 @@ body {
 
 .skills-content {
     display: none;
+    margin-bottom: 40px;
 }
 
 .skills-content.active {
@@ -223,8 +223,7 @@ body {
 
 .skill-bar-wrapper {
     width: calc(50% - 40px);
-    margin: 0   10px;
-
+    margin: 0 10px;
 }
 
 .skill-name {
@@ -255,17 +254,34 @@ body {
 
 /* Contact section */
 .contact-me-section {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 50px 20px;
+    padding: 50px 0;
     background-color: #E3EBF0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
 }
 
-.contact-me-section form {
-    flex: 1;
+.contact-me-title {
+    font-size: 2.9rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-me-section .form-container {
     margin-right: 20px;
+}
+
+.contact-me-section .form-container h4 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.contact-me-section .email-info {
+    margin-left: 20px;
+}
+
+.contact-me-section .email-info h4 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #007BFF;
 }
 
 .contact-me-section form input,
@@ -275,6 +291,7 @@ body {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .contact-me-section form button {
@@ -286,9 +303,13 @@ body {
     cursor: pointer;
 }
 
-.contact-me-section .email-info {
-    flex: 1;
-    margin-left: 20px;
+.contact-me-section .email-info p {
+    font-size: 1.3rem;
+}
+
+.line {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
 }
 
 footer {
@@ -315,16 +336,18 @@ footer svg {
     }
 
     .contact-me-section {
-        flex-direction: column;
+        padding: 20px 0;
     }
 
-    .contact-me-section form {
+    .contact-me-section .form-container {
+        order: 2;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
     .contact-me-section .email-info {
         margin-left: 0;
+        margin-bottom: 20px;
     }
 
     .project-item {
@@ -346,7 +369,7 @@ footer svg {
     }
 
     .skill-bar-wrapper {
-        width: calc(100% - 15px); 
+        width: calc(100% - 15px);
         margin: 5px 10px;
     }
 }
