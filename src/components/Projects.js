@@ -13,7 +13,7 @@ const Projects = () => {
                 clone_url: 'https://github.com/mucsci-students/2024sp-420-PythonB.git',
                 html_url: 'https://github.com/mucsci-students/2024sp-420-PythonB',
                 stargazers_count: 3,
-                forks_count: 10,
+                forks_count: 0,
                 languages_url: 'https://api.github.com/repos/mucsci-students/2024sp-420-PythonB/language',
                 updated_at: '2024-05-29T03:00:00Z',
                 owner: {

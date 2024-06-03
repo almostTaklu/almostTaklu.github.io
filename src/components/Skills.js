@@ -102,6 +102,24 @@ const Skills = () => {
             <div className="bar-inner"></div>
           </div>
         </div>
+        <div className="skill-bar-wrapper">
+          <div className="skill-name">Leadership</div>
+          <div className="bar" data-width="80%">
+            <div className="bar-inner"></div>
+          </div>
+        </div>
+        <div className="skill-bar-wrapper">
+          <div className="skill-name">Multitasking</div>
+          <div className="bar" data-width="90%">
+            <div className="bar-inner"></div>
+          </div>
+        </div>
+        <div className="skill-bar-wrapper">
+          <div className="skill-name">Detail-Oriented</div>
+          <div className="bar" data-width="80%">
+            <div className="bar-inner"></div>
+          </div>
+        </div>
       </div>
     </div>
   );

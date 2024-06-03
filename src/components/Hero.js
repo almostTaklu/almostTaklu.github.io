@@ -21,11 +21,21 @@ const Hero = () => {
           />
         </h2>
         <div className="social-icons">
-          <FaGithub />
-          <FaLinkedin />
-          <FaReddit />
-          <FaTwitter />
-          <FaFilePdf />
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://reddit.com" target="_blank" rel="noopener noreferrer">
+            <FaReddit />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+          <a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <FaFilePdf />
+          </a>
         </div>
       </div>
     </div>

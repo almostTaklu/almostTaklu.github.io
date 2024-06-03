@@ -9,7 +9,7 @@ const Contact = () => {
         <h2 className="contact-me-title">Contact Me</h2>
         <Row>
           <Col sm={12} md={6} className="form-container">
-            <form action="contact.php" method="post">
+            <form action="/contact.php" method="post">
               <h4>Send me a Message</h4>
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" required />
@@ -21,9 +21,6 @@ const Contact = () => {
             <h4>Get in Touch</h4>
             <p>I am actively seeking opportunities as a software or web developer. If you have any openings or just want to connect, please reach out to me at <a href="mailto:ach.ganga@outlook.com">ach.ganga@outlook.com</a>.</p>
           </Col>
-        </Row>
-        <Row className="d-block d-md-none">
-          <div className="line"></div>
         </Row>
       </Container>
     </div>

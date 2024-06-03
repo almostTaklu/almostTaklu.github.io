@@ -66,7 +66,7 @@
     align-items: center;
     color: #fff;
     overflow: hidden;
-    background: linear-gradient(145deg, rgba(76, 175, 80, 1) 0%, rgba(49, 183, 255, 0.88) 99%);
+    background: linear-gradient(136deg,#A75D5D, #D3756B, #F0997D,#FFC3A1, #4D869C, #F08A5D);
     background-size: 1200% 1200%;
     -webkit-animation: gradientBackground 70s ease infinite;
     -moz-animation: gradientBackground 70s ease infinite;
@@ -461,28 +461,37 @@
 
 .hero h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 3.2rem;
-    margin-top: 0;
-    padding: 0;
-    z-index: 2;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
 }
 
 .hero h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
-    color: #fff;
-    margin-top: 20px;
-    padding: 0;
-    z-index: 2;
+    font-size: 1.2rem;
+    margin-bottom: 60px;
 }
 
 .social-icons {
-    margin-top: 20px;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px
 }
 
-.social-icons svg {
-    margin: 0 10px;
-    font-size: 2rem;
-    color: #fff;
+.social-icons a {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+@keyframes moveStars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
 }
