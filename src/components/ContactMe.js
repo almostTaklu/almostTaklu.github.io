@@ -1,20 +1,35 @@
+// Make sure to run npm install @formspree/react
+// For more help visit https://formspr.ee/react-help
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/styles.css';
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xayrgknk");
+
   return (
     <div className="contact-me-section" id="contact">
       <Container>
         <h2 className="contact-me-title">Contact Me</h2>
         <Row>
           <Col sm={12} md={6} className="form-container">
-            <form action="/contact.php" method="post">
+            <form onSubmit={handleSubmit}>
               <h4>Send me a Message</h4>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Your Email" required />
-              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <ValidationError prefix="Name" field="name" errors={state.errors} />
+
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <ValidationError prefix="Email" field="email" errors={state.errors} />
+
+              <label htmlFor="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <ValidationError prefix="Message" field="message" errors={state.errors} />
+
+              <button type="submit" disabled={state.submitting}>Send Message</button>
+              {state.succeeded && <p>Message Sent!</p>}
             </form>
           </Col>
           <Col sm={12} md={5} className="email-info">

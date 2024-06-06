@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaReddit, FaTwitter, FaFilePdf } from 'react-icons/fa';
-import '../styles/Hero.css';
+import '../styles/styles.css';
 
 const Hero = () => {
   return (

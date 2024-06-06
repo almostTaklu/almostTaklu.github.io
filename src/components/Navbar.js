@@ -1,23 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import '../styles/Navbar.css';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/styles.css';
 
-const CustomNavbar = () => {
-  const [expanded, setExpanded] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  const toggleNavbar = () => {
-    setExpanded(!expanded);
-  };
-
+const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
+      const navbar = document.querySelector('.navbar');
       if (window.scrollY > 50) {
-        setScrolled(true);
+        navbar.classList.add('scrolled');
       } else {
-        setScrolled(false);
+        navbar.classList.remove('scrolled');
       }
     };
 
@@ -28,55 +20,34 @@ const CustomNavbar = () => {
   }, []);
 
   return (
-    <Navbar expand="lg" fixed="top" expanded={expanded} className={scrolled ? 'scrolled' : ''}>
-      <Container>
-        <Navbar.Brand href="#">Ganga Acharya</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}>
-          {expanded ? <FaTimes /> : <FaBars />}
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <ScrollLink
-              to="hero"
-              smooth={true}
-              duration={500}
-              onClick={() => setExpanded(false)}
-              className="nav-link"
-            >
-              Home
-            </ScrollLink>
-            <ScrollLink
-              to="aboutme"
-              smooth={true}
-              duration={500}
-              onClick={() => setExpanded(false)}
-              className="nav-link"
-            >
-              Projects
-            </ScrollLink>
-            <ScrollLink
-              to="skills"
-              smooth={true}
-              duration={500}
-              onClick={() => setExpanded(false)}
-              className="nav-link"
-            >
-              Skills
-            </ScrollLink>
-            <ScrollLink
-              to="contactme"
-              smooth={true}
-              duration={500}
-              onClick={() => setExpanded(false)}
-              className="nav-link"
-            >
-              Contact Me
-            </ScrollLink>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar navbar-expand-lg fixed-top">
+      <div className="container">
+        <a className="navbar-brand" href="#hero">Ganga Acharya</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About Me</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects">Projects</a>
+            </li>
+            <li className="nav-item">
+            <Link className="nav-link" to="/resume">Resume</Link>
+          </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#skills">Skills</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
-export default CustomNavbar;
+export default Navbar;

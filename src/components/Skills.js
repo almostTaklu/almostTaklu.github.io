@@ -38,48 +38,56 @@ const Skills = () => {
           <div className="skill-name">Java</div>
           <div className="bar" data-width="80%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>80%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">HTML/CSS</div>
           <div className="bar" data-width="90%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>90%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Python</div>
           <div className="bar" data-width="60%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>60%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">C++/C</div>
           <div className="bar" data-width="70%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>70%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Postgres SQL</div>
           <div className="bar" data-width="85%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>85%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">JavaScript</div>
           <div className="bar" data-width="75%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>75%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">React/Angular</div>
-          <div className="bar" data-width="75%">
+          <div className="bar" data-width="80%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>80%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">C#</div>
           <div className="bar" data-width="25%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>25%</div>
           </div>
         </div>
       </div>
@@ -88,36 +96,42 @@ const Skills = () => {
           <div className="skill-name">Communication</div>
           <div className="bar" data-width="90%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>90%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Teamwork</div>
           <div className="bar" data-width="85%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>85%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Problem-solving</div>
           <div className="bar" data-width="80%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>80%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Leadership</div>
-          <div className="bar" data-width="80%">
+          <div className="bar" data-width="75%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>75%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Multitasking</div>
           <div className="bar" data-width="90%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>90%</div>
           </div>
         </div>
         <div className="skill-bar-wrapper">
           <div className="skill-name">Detail-Oriented</div>
           <div className="bar" data-width="80%">
             <div className="bar-inner"></div>
+            <div className='bar-percent'>80%</div>
           </div>
         </div>
       </div>
