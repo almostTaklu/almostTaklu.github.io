@@ -23,7 +23,7 @@
   
   .about-title::after {
     content: '';
-    width: 5%;
+    width: 3%;
     height: 2px;
     background: #000;
     position: absolute;

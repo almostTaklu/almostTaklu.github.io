@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0; /* Increase padding for larger section */
+    padding: 4rem 0;
     position: relative;
-    background-color: #8986865c; /* Background color for the section */
+    background-color: #8986865c;
   }
   
   .skills .container {
@@ -23,7 +23,7 @@
   
   .skills-title::after {
     content: '';
-    width: 5%;
+    width: 3%;
     height: 2px;
     background: #000;
     position: absolute;
@@ -52,7 +52,7 @@
   }
   
   .skill-icon {
-    font-size: 4rem;
+    font-size: 7rem;
     color: #007bff;
     margin-bottom: 1rem;
   }
@@ -84,7 +84,7 @@
     }
   
     .skill-icon {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   
