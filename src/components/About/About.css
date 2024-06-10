@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0; /* Increase padding for larger section */
+    padding: 4rem 0;
     position: relative;
-    background-color: #f9f9f9; /* Background color for the section */
+    background-color: #f9f9f9;
   }
   
   .about .container {
@@ -18,7 +18,7 @@
     font-size: 2.2rem;
     text-align: center;
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   
   .about-title::after {
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
   
   .about-image {
@@ -45,13 +45,11 @@
     width: 100%;
     border-radius: 50%;
     border: 5px solid #714d5a;
-    margin-bottom: 5rem; /* Space between image and text */
   }
   
   .about-text {
     font-size: 1.3rem;
     flex: 2;
-    margin-bottom: 2.5rem; /* More space between text and button */
   }
   
   .resume-button {
@@ -63,45 +61,42 @@
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem; /* Smaller font size */
+    font-size: 1rem;
   }
   
   /* Styles for larger screens */
   @media (min-width: 768px) {
     .about-content {
-      flex-direction: row; /* Arrange items side by side */
-      text-align: left; /* Align text to the left */
+      flex-direction: row; 
+      text-align: left;
     }
     .about-image {
       display: block;
       max-width: 250px;
-      margin-right: 5.8rem; /* More space between image and text */
-      margin-bottom: 0; /* Remove bottom margin */
+      margin-right: 5rem;
     }
     .about-text {
       margin-top: 2rem;
-      margin-bottom: 3.8rem; /* More space below the text */
       text-align: justify;
     }
     .resume-button {
-      margin-top: 2rem; /* Space between text and button */
+      margin-top: 2rem;
     }
   }
   
   /* Styles for smaller screens */
   @media (max-width: 767px) {
     .about-image {
-      display: none; /* Hide image on smaller devices */
+      display: none;
     }
   
     .about-text {
       margin-top: 2rem;
-      margin-bottom: 3.8rem; /* More space below the text */
       text-align: justify;
     }
   
     .resume-button {
-      margin-top: 2rem; /* Space between text and button */
+      margin-top: 2rem;
     }
   }
   
