@@ -35,7 +35,7 @@
   .projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 0; /* Default gap between project cards */
+    gap: 0;
     width: 100%;
   }
   

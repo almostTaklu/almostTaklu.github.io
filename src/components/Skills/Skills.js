@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Skills.css';
 
 const skills = [
@@ -15,17 +15,11 @@ const skills = [
 ];
 
 const Skills = () => {
-  const [showAll, setShowAll] = useState(false);
-
-  const toggleShowAll = () => {
-    setShowAll(!showAll);
-  };
-
   return (
     <section id="skills" className="skills">
       <div className="container">
         <h2 className="skills-title">Skills</h2>
-        <div className={`skills-content ${showAll ? 'show-all' : ''}`}>
+        <div className="skills-content">
           {skills.map((skill, index) => (
             <div key={index} className="skill-item">
               <i className={`skill-icon ${skill.icon}`}></i>
@@ -33,9 +27,6 @@ const Skills = () => {
             </div>
           ))}
         </div>
-        <button className="toggle-button" onClick={toggleShowAll}>
-          {showAll ? 'Show Less' : 'Show More'}
-        </button>
       </div>
     </section>
   );
