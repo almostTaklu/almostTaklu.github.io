@@ -18,7 +18,7 @@
     font-size: 2.2rem;
     text-align: center;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   
   .about-title::after {
@@ -45,11 +45,13 @@
     width: 100%;
     border-radius: 50%;
     border: 5px solid #714d5a;
+    margin-bottom: 2rem;
   }
   
   .about-text {
     font-size: 1.3rem;
     flex: 2;
+    margin-bottom: 2.5rem; /* More space between text and button */
   }
   
   .resume-button {
@@ -74,9 +76,10 @@
       display: block;
       max-width: 250px;
       margin-right: 5rem;
+      margin-bottom: 0;
     }
     .about-text {
-      margin-top: 2rem;
+      margin-top: 0;
       text-align: justify;
     }
     .resume-button {
@@ -89,12 +92,10 @@
     .about-image {
       display: none;
     }
-  
     .about-text {
       margin-top: 2rem;
       text-align: justify;
     }
-  
     .resume-button {
       margin-top: 2rem;
     }
