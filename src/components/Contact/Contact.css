@@ -1,0 +1,38 @@
+.contact {
+    padding: 3rem 0;
+  }
+  
+  .contact .contact-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact .contact-content form {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  .contact .contact-content form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact .contact-content form input,
+  .contact .contact-content form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact .contact-content form button {
+    padding: 0.5rem 1rem;
+    background: #ff6347;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact .contact-content .contact-info {
+    flex: 1;
+  }
+  
