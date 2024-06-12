@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(140deg, #003135, #024950, #964734, #0fa4af, #afdde5);
+    background: linear-gradient(140deg, #212A31, #2E3944,#124E66, #748D92, #d3D9D4);
     background-size: 600% 600%;
     animation: gradient 15s ease infinite;
     color: #fff;

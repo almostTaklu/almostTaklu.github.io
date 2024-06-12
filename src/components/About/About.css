@@ -4,7 +4,7 @@
     justify-content: center;
     padding: 4rem 0;
     position: relative;
-    background-color: #f9f9f9;
+    background-color: #003135; /* Darker background color */
   }
   
   .about .container {
@@ -19,13 +19,14 @@
     text-align: center;
     position: relative;
     margin-bottom: 5rem;
+    color: #AFDDE5; /* Updated title color */
   }
   
   .about-title::after {
     content: '';
     width: 3%;
     height: 2px;
-    background: #000;
+    background: #AFDDE5; /* Updated underline color */
     position: absolute;
     left: 50%;
     bottom: -10px;
@@ -44,7 +45,7 @@
     max-width: 200px;
     width: 100%;
     border-radius: 50%;
-    border: 5px solid #714d5a;
+    border: 5px solid #964734; /* Updated border color */
     margin-bottom: 2rem;
   }
   
@@ -52,21 +53,26 @@
     font-size: 1.3rem;
     flex: 2;
     margin-bottom: 2.5rem; /* More space between text and button */
+    color: #AFDDE5; /* Updated text color */
   }
   
   .resume-button {
     display: inline-block;
     margin: 0 auto;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #0fa4af; /* Updated button background color */
     color: #fff;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
   }
   
-  /* Styles for larger screens */
+  .resume-button:hover {
+    background-color: #964734; /* Hover effect */
+  }
+  
   @media (min-width: 768px) {
     .about-content {
       flex-direction: row; 
@@ -86,7 +92,6 @@
     }
   }
   
-  /* Styles for smaller screens */
   @media (max-width: 767px) {
     .about-image {
       display: none;

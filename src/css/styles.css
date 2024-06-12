@@ -19,3 +19,20 @@
     padding: 0 1rem;
   }
   
+  .button {
+    background-color: #0fa4af;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #964734;
+  }
+  
