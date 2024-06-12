@@ -136,6 +136,39 @@
     color: #D3D9D4;
 }
 
+.go-to-top {
+    margin-top: 4rem;
+    background: transparent;
+    color: #0fa4af;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: moveUpDown 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-to-top:hover {
+    color: #D3D9D4;
+    animation: none;
+}
+
+.go-to-top-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 @media (max-width: 768px) {
     .contact-content {
         flex-direction: column;
@@ -144,6 +177,10 @@
     .contact-info,
     .contact-form {
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .go-to-top-wrapper {
+        margin-top: 0.5rem;
     }
 }

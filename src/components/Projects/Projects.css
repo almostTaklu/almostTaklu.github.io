@@ -25,7 +25,7 @@
 .projects-title::after {
     content: '';
     width: 3%;
-    height: 2px;
+    height: 4px;
     background: #D3D9D4;
     position: absolute;
     left: 50%;

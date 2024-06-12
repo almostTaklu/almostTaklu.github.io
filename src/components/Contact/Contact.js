@@ -27,6 +27,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <div className="go-to-top-wrapper">
+          <div className="go-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <i className="fas fa-angle-up"></i>
+          </div>
+        </div>
       </div>
     </section>
   );
