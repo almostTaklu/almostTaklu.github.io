@@ -3,36 +3,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Custom Styles */
-  .container {
+}
+
+/* Custom Styles */
+.container {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 1rem;
-  }
-  
-  .button {
-    background-color: #0fa4af;
-    color: #fff;
-    padding: 0.5rem 1rem;
+}
+
+.button {
+    background-color: #124E66;
+    color: #D3D9D4;
+    padding: 0.5rem .8rem;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s;
     border: none;
     cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #964734;
-  }
-  
+}
+
+.button:hover {
+    background-color: #748D92;
+}

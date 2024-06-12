@@ -4,103 +4,109 @@
     justify-content: center;
     padding: 4rem 0;
     position: relative;
-    background-color: #003135; /* Darker background color */
-  }
-  
-  .about .container {
+    background-color: #2E3944;
+}
+
+.about .container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 1rem;
-  }
-  
-  .about-title {
+}
+
+.about-title {
     font-family: "Nunito", sans-serif;
     font-size: 2.2rem;
     text-align: center;
     position: relative;
-    margin-bottom: 5rem;
-    color: #AFDDE5; /* Updated title color */
-  }
-  
-  .about-title::after {
+    margin-bottom: 3.5rem;
+    color: #D3D9D4;
+}
+
+.about-title::after {
     content: '';
     width: 3%;
-    height: 2px;
-    background: #AFDDE5; /* Updated underline color */
+    height: 4px;
+    background: #D3D9D4;
     position: absolute;
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
-  }
-  
-  .about-content {
+}
+
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .about-image {
+}
+
+.about-image {
     flex: 1;
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
     border-radius: 50%;
-    border: 5px solid #964734; /* Updated border color */
-    margin-bottom: 2rem;
-  }
-  
-  .about-text {
+    border: 8px solid #124E66;
+    margin-bottom: 1rem;
+}
+
+.about-text {
     font-size: 1.3rem;
     flex: 2;
-    margin-bottom: 2.5rem; /* More space between text and button */
-    color: #AFDDE5; /* Updated text color */
-  }
-  
-  .resume-button {
+    margin-bottom: 0rem;
+    color: #D3D9D4;
+}
+
+.resume-button {
     display: inline-block;
     margin: 0 auto;
     padding: 0.5rem 1rem;
-    background-color: #0fa4af; /* Updated button background color */
-    color: #fff;
+    background-color: #124E66;
+    color: #D3D9D4;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .resume-button:hover {
-    background-color: #964734; /* Hover effect */
-  }
-  
-  @media (min-width: 768px) {
+    transition: background-color 0.3s ease, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.resume-button:hover {
+    background-color: #748D92;
+}
+
+@media (min-width: 768px) {
     .about-content {
-      flex-direction: row; 
-      text-align: left;
+        flex-direction: row;
+        text-align: left;
     }
     .about-image {
-      display: block;
-      max-width: 250px;
-      margin-right: 5rem;
+        display: block;
+        max-width: 250px;
+        margin-right: 5rem;
     }
     .about-text {
-      margin-top: 0;
-      text-align: justify;
+        margin-top: 0;
+        text-align: justify;
+        word-spacing: 3px;
+        line-height: 2.3rem;
     }
     .resume-button {
-      margin-top: 2rem;
+        margin-top: 2rem;
     }
-  }
-  
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     .about-image {
-      display: none;
+        display: none;
     }
     .about-text {
-      text-align: justify;
+        margin-top: 0;
+        text-align: justify;
+        word-spacing: 2px;
+        line-height: 2.2rem;
     }
     .resume-button {
-      margin-top: 2rem;
+        margin-top: 2rem;
     }
-  }
-  
+}
