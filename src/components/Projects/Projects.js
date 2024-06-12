@@ -7,21 +7,24 @@ const projects = [
     description: 'This is a description for project 1.',
     languages: ['HTML5', 'CSS3', 'JavaScript'],
     github: '#',
-    link: '#'
+    link: '#',
+    type: 'Individual Project'
   },
   {
     title: 'Project 2',
     description: 'This is a description for project 2.',
     languages: ['React', 'Node.js'],
     github: '#',
-    link: '#'
+    link: '#',
+    type: 'Team Project' 
   },
   {
     title: 'Project 3',
     description: 'This is a description for project 3.',
     languages: ['React', 'Node.js'],
     github: '#',
-    link: '#'
+    link: '#',
+    type: 'Individual Project'
   },
   // Add more projects as needed
 ];
@@ -36,6 +39,7 @@ const Projects = () => {
             <div key={index} className="project-card">
               <div className="project-header">
                 <h3 className="project-title">{project.title}</h3>
+                <p className="project-type">{project.type}</p> {}
               </div>
               <div className="project-body">
                 <p className="project-description">{project.description}</p>
