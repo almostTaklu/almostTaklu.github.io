@@ -12,71 +12,70 @@
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0;
-  }
-  
-  .hero .container {
-    max-width: 1300px; /* Ensure consistent container size */
+}
+
+.hero .container {
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 1rem;
     z-index: 1;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     font-size: 3.8rem;
     margin-bottom: 1rem;
-  }
-  
-  .hero .typewriter {
+}
+
+.hero .typewriter {
     min-height: 2rem;
     display: inline-block;
-  }
-  
-  .hero .typewriter {
+}
+
+.hero .typewriter {
     font-size: 1.3rem;
     display: inline-block;
     animation: blink 0.75s step-end infinite;
     margin: 0;
     white-space: nowrap;
-  }
-  
-  @keyframes gradient {
+}
+
+@keyframes gradient {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  }
-  
-  @keyframes blink {
+}
+
+@keyframes blink {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .hero h1 {
-      font-size: 2.3rem;
+        font-size: 2.3rem;
     }
     .hero .typewriter {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .hero h1 {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
     .hero .typewriter {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  }
-  
-  /* Particle (star) animation */
-  .hero .particles {
+}
+
+.hero .particles {
     position: absolute;
     top: 0;
     left: 0;
@@ -84,9 +83,9 @@
     height: 100%;
     overflow: hidden;
     z-index: 0;
-  }
-  
-  .hero .particles .particle {
+}
+
+.hero .particles .particle {
     position: absolute;
     display: block;
     width: 3px;
@@ -94,25 +93,54 @@
     background: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     animation: twinkle 5s infinite, move 20s linear infinite;
-  }
-  
-  @keyframes twinkle {
+}
+
+@keyframes twinkle {
     0%, 100% {
-      opacity: 0.2;
-      transform: scale(1);
+        opacity: 0.2;
+        transform: scale(1);
     }
     50% {
-      opacity: 1;
-      transform: scale(1.5);
+        opacity: 1;
+        transform: scale(1.5);
     }
-  }
-  
-  @keyframes move {
+}
+
+@keyframes move {
     0% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
     100% {
-      transform: translate(100px, 100px);
+        transform: translate(100px, 100px);
     }
-  }
-  
+}
+
+.angle-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    animation: moveUpDown 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angle-down:hover {
+    color: #D3D9D4;
+    animation-play-state: paused;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}

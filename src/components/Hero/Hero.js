@@ -45,6 +45,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="particles" ref={particlesRef}></div>
+      <div className="angle-down" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+        <i className="fas fa-angle-down"></i>
+      </div>
     </section>
   );
 };
